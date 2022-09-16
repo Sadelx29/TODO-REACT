@@ -1,5 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import TaskList from './components/containers/task_list';
+import ContactList from './components/containers/contact_list';
+
+// import Greeting from './components/greeting';
+// import GreetingF from './components/greetingF';
+
 
 function App() {
   return (
@@ -7,7 +13,10 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <TaskList></TaskList>
+        </p>
+        <p>
+          <ContactList></ContactList>
         </p>
         <a
           className="App-link"
